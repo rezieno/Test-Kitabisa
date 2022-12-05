@@ -36,27 +36,6 @@ Valid Phone Register Kitabisa
     Click Button  //button[text()='Daftar']
     Sleep     15s
 
-Valid Phone Register Uncheck WA Kitabisa
-    Open Browser    https://accounts.kitabisa.com/register    chrome
-    Maximize Browser Window
-    Sleep    5s 
-    Input Text    //input[@data-testid='register-input-email']    123456789012
-    Input Text    //input[@data-testid='register-input-name']   rezie
-    Sleep     5s
-    Input Text    //input[@data-testid='register-input-email']    085210757422
-    Input Text    //input[@data-testid='register-input-name']   rezie123 
-    Sleep     2s 
-    Input Text    //input[@data-testid='register-input-name']   rezie  
-    Sleep    5s 
-    Select Checkbox    //*[@id="checkbox"] 
-    Sleep    30s 
-    Unselect Checkbox  //*[@id="checkbox"] 
-    Sleep    5s
-    Checkbox Should Not Be Selected    //*[@id="checkbox"]
-    Sleep    10s 
-    Click Button  //button[text()='Daftar']
-    Sleep     15s
-
 
 Register by Apple ID
     Open Browser    https://accounts.kitabisa.com/register    chrome
